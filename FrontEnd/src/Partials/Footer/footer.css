@@ -1,0 +1,15 @@
+.footer{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    background-color:var(--footer);
+    z-index:10;
+}
+.footer__textCont{
+    padding-inline:1.5rem;
+    padding-block:0.5rem;
+}
+.footer__text{
+    display:flex;
+    justify-content:center;
+}

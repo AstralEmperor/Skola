@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<link href="/SECA-SUMA/style.css" type="text/css" rel="stylesheet">
+<link href="/SECA-SUMA/FrontEnd/src/Delovi/Login/login.css" type="text/css" rel="stylesheet">
+        <form id="login" action="/SECA-SUMA/FrontEnd/src/Modali/LoginProvera/loginProvera.php" method="POST">
+            <div class="login__cancelWrap">
+                <button class="login__cancel"><img src="/SECA-SUMA/FrontEnd/Assets/cancel_icon.png" alt="cancel.png"></button>
+            </div>
+            <div class="login__inputField">
+                <div class="login__usernameWrap">
+                    <label for="korisnickoIme">Korisnicko ime:</label>
+                    <input id="korisnickoIme" name="korisnickoIme" type="text" placeholder="Korisnicko ime" pattern="[A-Za-z0-9]{3,20}" oninvalid="this.setCustomValidity('Molimo vas unesite 3 do 20 karaktera(A-z, 0-9)')" oninput="setCustomValidity('')" required>
+                </div>
+                <div class="login__passwordWrap">
+                    <label for="sifra">Šifra:</label>
+                    <input id="sifra" name="sifra" type="password" placeholder="Šifra" pattern="[A-Za-z0-9]{3,20}" oninvalid="this.setCustomValidity('Molimo vas unesite 3 do 20 slova(A-z, 0-9)')" oninput="setCustomValidity('')" required>
+                </div>
+            </div>
+            <input class="login__btn button" type="submit" value="Prijavi se">
+        </form>
+<script src="/SECA-SUMA/FrontEnd/src/Delovi/Login/login.js"></script>
